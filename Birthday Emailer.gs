@@ -62,14 +62,14 @@ if (hebrewDate.get("Month") == "Tishrei" && hebrewDate.get("Day") == 9 && today.
   console.log("Created trigger for 10:00pm Yom Kipper night");
 }
 
-//Delete one-time trigger on day after use, two days after tom tov to account for any delays
-if ((hebrewDate.get("Month") == "Tishrei" && hebrewDate.get("Day") == 4) ||
+//Delete one-time trigger on day after use
+if ((hebrewDate.get("Month") == "Tishrei" && hebrewDate.get("Day") == 3) ||
     (hebrewDate.get("Month") == "Tishrei" && hebrewDate.get("Day") == 11) ||
-    (hebrewDate.get("Month") == "Tishrei" && hebrewDate.get("Day") == 18) ||
-    (hebrewDate.get("Month") == "Tishrei" && hebrewDate.get("Day") == 25) ||
-    (hebrewDate.get("Month") == "Nisan" && hebrewDate.get("Day") == 18) ||
-    (hebrewDate.get("Month") == "Nisan" && hebrewDate.get("Day") == 24) ||
-    (hebrewDate.get("Month") == "Sivan" && hebrewDate.get("Day") == 9)) {
+    (hebrewDate.get("Month") == "Tishrei" && hebrewDate.get("Day") == 17) ||
+    (hebrewDate.get("Month") == "Tishrei" && hebrewDate.get("Day") == 24) ||
+    (hebrewDate.get("Month") == "Nisan" && hebrewDate.get("Day") == 17) ||
+    (hebrewDate.get("Month") == "Nisan" && hebrewDate.get("Day") == 23) ||
+    (hebrewDate.get("Month") == "Sivan" && hebrewDate.get("Day") == 8)) {
     recreateTriggers();
 }
 
